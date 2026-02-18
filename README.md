@@ -1,90 +1,127 @@
-AI Financial Intelligence Platform
+# AI Financial Intelligence Platform
 
-An AI-powered financial analysis system for Indian equities using Retrieval-Augmented Generation (RAG), sentiment analysis, and large language models.
+AI-powered stock analysis system for Indian equities using Retrieval-Augmented Generation (RAG), sentiment analysis, and large language models.
 
-[Open the AI Stock Assistant](https://cc894189-ai-stock-intelligence.hf.space)
+## Live Demo
 
+[Launch the App](https://cc894189-ai-stock-intelligence.hf.space)
 
-Open the AI Stock Assistant
+---
 
-Features
-1. Stock Q&A
+## Overview
 
-Ask natural language questions about any Indian stock
+This project is a real-world AI financial assistant that combines live stock data, news sentiment, semantic search, and large language models to generate investor-oriented insights.
 
-AI provides contextual financial analysis
+Users can:
 
-2. Stock Comparison
+* Ask questions about any Indian stock
+* Compare two stocks
+* Analyze a portfolio
 
-Compare two stocks
+The system uses a RAG pipeline to ensure answers are grounded in real financial data.
 
-Get investor-oriented insights
+---
 
-3. Portfolio Analyzer
+## Key Features
 
-Input multiple tickers
+### Stock Q&A
 
-Receive diversification and risk analysis
+Ask natural language questions like:
 
-AI Architecture
+* “What does TCS do?”
+* “Is this stock overvalued?”
+* “What are the risks of this company?”
 
-Core Components:
+The AI responds using real fundamentals and news context.
 
-Retrieval-Augmented Generation (RAG)
+---
 
-FAISS vector search
+### Stock Comparison
 
-Financial sentiment analysis (FinBERT)
+Compare two companies and receive:
 
-LLM reasoning via Groq API
+* Sector analysis
+* Valuation comparison
+* Investor suitability insights
 
-Real-time financial data via yfinance
+---
 
-Pipeline:
+### Portfolio Analyzer
 
-Fetch stock fundamentals and news
+Input multiple tickers and get:
 
-Compute sentiment and price trend
+* Diversification analysis
+* Sector exposure insights
+* Risk observations
 
-Build vector knowledge base
+---
 
-Retrieve relevant context
+## AI Architecture
 
-Generate financial analysis using LLM
+### Core Components
 
-Tech Stack
+* Retrieval-Augmented Generation (RAG)
+* FAISS vector search
+* Financial sentiment analysis (FinBERT)
+* LLM reasoning via Groq API
+* Real-time stock data via yfinance
 
-Python
+### Pipeline
 
-Streamlit
+1. Fetch stock fundamentals and news
+2. Compute sentiment and price trend
+3. Convert data into semantic chunks
+4. Store embeddings in FAISS index
+5. Retrieve relevant context for user query
+6. Generate analysis using LLM
 
-Sentence Transformers
+---
 
-FAISS
+## Tech Stack
 
-FinBERT
+**AI & NLP**
 
-Groq LLM API
+* Sentence Transformers (MiniLM)
+* FinBERT sentiment model
+* Groq-hosted LLM
 
-yfinance
+**Backend**
 
-Example Use Cases
+* Python
+* FAISS
+* yfinance
 
-Quick stock research
+**Frontend**
 
-Investment comparison
+* Streamlit
 
-Portfolio diversification insights
+**Deployment**
 
-Financial Q&A assistant
+* Hugging Face Spaces
 
-Project Structure
+---
+
+## Project Structure
+
+```
 ai-stock-intelligence/
 │
 ├── app.py
 ├── requirements.txt
 └── README.md
-Author
+```
 
-AI Engineering Student
-Focused on building real-world AI systems and financial intelligence tools.
+---
+
+## Example Use Cases
+
+* Quick stock research assistant
+* Retail investor analysis tool
+* Portfolio diversification insights
+* Financial Q&A chatbot
+
+---
+
+## Author
+
+AI Engineering student focused on building real-world AI systems in finance and applied machine learning.
